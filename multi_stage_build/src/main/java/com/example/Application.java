@@ -16,6 +16,7 @@ public class Application {
 class HelloController {
     @GetMapping("/")
     public String hello() {
-        return "Hello and welcome to my channel - dgruploads!! This is an example for multi-stage build";
+        return "Hello and welcome to "Docker World" Create a Image using Multistage Build Dockerfile using Distroless Base Image.
+" ;
     }
 }
