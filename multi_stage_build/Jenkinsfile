@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages { 
+        stage('gitcheckout') {
+            checkout scmGit(
+                branches: [[
+                    name: '*/main']], 
+                    userRemoteConfigs: [[
+                        credentialsId: 'github_creditial', 
+                        url: 'https://github.com/Likihes/Docker_course.git'
+                        ]]
+                        )
+        
+    }
+    
+         stage('build')
+         {
+
+         }
+    }
+}
