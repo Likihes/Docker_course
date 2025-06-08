@@ -4,7 +4,7 @@ pipeline {
         stage('gitcheckout') {
             checkout scmGit(
                 branches: [[
-                    name: '*/main']], 
+                    name: '*/master']], 
                     userRemoteConfigs: [[
                         credentialsId: 'github_creditial', 
                         url: 'https://github.com/Likihes/Docker_course.git'
